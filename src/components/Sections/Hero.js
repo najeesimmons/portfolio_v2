@@ -1,6 +1,6 @@
 import React from "react";
 import ResumeButton from "../Buttons/ResumeButtton";
-import BioCard from "../BioCard/BioCard";
+import Contact from "../ContactCard/ContactCard";
 
 function Hero() {
   return (
