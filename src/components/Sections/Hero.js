@@ -1,9 +1,11 @@
 import React from "react";
 import ResumeButton from "../Buttons/ResumeButtton";
+import BioCard from "../BioCard/BioCard";
 
 function Hero() {
   return (
     <>
+      {/* <div className="flex mt-48"> */}
       <div className="mx-auto mt-48 max-w-3xl">
         <div className="flex">
           {/* <div className="flex flex-col"> */}
@@ -18,12 +20,16 @@ function Hero() {
           SOFTWARE ENGINEER
         </h2>
         <p className="w-2/3">
-          Super passionate software engineer with professional experience
-          building scalable, feature-rich web applications and optimizing
-          frontend usability.
+          {/* Passionate software engineer with professional experience building
+          scalable, feature-rich web applications and optimizing frontend
+          usability. */}
+          Building scalable, feature-rich web apps and optimizing frontend
+          usablity.
         </p>
         <ResumeButton className="mt-8" />
       </div>
+      {/* <BioCard />
+      </div> */}
     </>
   );
 }
