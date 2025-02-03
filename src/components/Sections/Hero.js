@@ -1,14 +1,11 @@
 import React from "react";
 import ResumeButton from "../Buttons/ResumeButtton";
-import Contact from "../ContactCard/ContactCard";
 
 function Hero() {
   return (
     <>
-      {/* <div className="flex mt-48"> */}
-      <div className="mx-auto mt-48 max-w-3xl">
+      <div className="mx-auto mt-32 max-w-3xl">
         <div className="flex">
-          {/* <div className="flex flex-col"> */}
           <h1 className="mb-2 text-5xl font-semibold leading-tight text-primary mr-2">
             Najee
           </h1>
@@ -20,16 +17,11 @@ function Hero() {
           SOFTWARE ENGINEER
         </h2>
         <p className="w-2/3">
-          {/* Passionate software engineer with professional experience building
-          scalable, feature-rich web applications and optimizing frontend
-          usability. */}
           Building scalable, feature-rich web apps and optimizing frontend
           usablity.
         </p>
         <ResumeButton className="mt-8" />
       </div>
-      {/* <BioCard />
-      </div> */}
     </>
   );
 }

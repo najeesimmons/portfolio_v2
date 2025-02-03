@@ -1,22 +1,48 @@
 import React from "react";
+import Tech from "../Tech/Tech";
 
-function ProjectCard({ gradientColors }) {
-  const [color1, color2] = gradientColors; // Extract colors from the array
+function ProjectCard({ gradientColors, title, details, tech }) {
+  const [color1, color2] = gradientColors;
 
   return (
     <div
-      className="h-[315px] w-[250px] mb-8 max-w-xs rounded overflow-hidden shadow-lg"
+      className="h-[500] w-[300px] mb-4 max-w-xs rounded overflow-hidden shadow-sm p-4 bg-white"
       style={{
-        background: `linear-gradient(135deg, ${color1} 10%, ${color2})`,
-      }} // Use inline styles
+        boxShadow: `0px 2px 5px 0px ${color1}, 0px 3px 10px 0px ${color2}`,
+      }}
     >
-      <div className="px-6 py-4">
-        <h2 className="font-bold text-xl mb-2">Card Title</h2>
-        <p className="text-gray-700 text-base">
-          This is a simple card with an image, title, and description.
-        </p>
+      <div className="h-[400] px-6 py-4">
+        <h2 className="font-bold text-xl mb-2">{title}</h2>
+        <Tech tech={tech} />
+        <ul className="space-y-2 mt-4 mb-8">
+          {details.map((detail, index) => (
+            <li
+              key={index}
+              className="relative pl-6 text-gray-700 text-sm"
+              style={{ listStyle: "none" }}
+            >
+              <span
+                className="absolute left-0 top-0"
+                style={{
+                  content: "'•'", // Manual bullet
+                  fontSize: "1.2em",
+                }}
+              >
+                •
+              </span>
+              {detail}
+            </li>
+          ))}
+        </ul>
+        <div className="w-11/12 mx-auto flex justify-between">
+          <button className="w-2/5 bg-black text-white text-xs font-semibold tracking-widest py-3 px-4 transition-transform duration-200 hover:bg-gray-800">
+            LIVE
+          </button>
+          <button className="w-2/5 bg-black text-white text-xs font-semibold tracking-widest py-3 px-4 transition-transform duration-200 hover:bg-gray-800">
+            REPO
+          </button>
+        </div>
       </div>
-      <div className="px-6 py-4"></div>
     </div>
   );
 }
