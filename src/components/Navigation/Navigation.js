@@ -13,7 +13,15 @@ function Navigation() {
         <li className="text-lg font-semibold">
           <a href="/#contact">contact</a>
         </li>
-        <li className="text-lg font-semibold">resume</li>
+        <li className="text-lg font-semibold">
+          <a
+            href="https://drive.google.com/file/d/10888rfeezoSZ6VzjLi2aGFvhWjYza6bj/view?usp=share_link"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            resume
+          </a>
+        </li>
       </ul>
     </nav>
   );
