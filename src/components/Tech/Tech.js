@@ -2,7 +2,7 @@ import React from "react";
 
 function Tech({ tech }) {
   return (
-    <div className="h-[50] flex space-x-4">
+    <div className="h-[50] flex flex-wrap gap-4 justify-start">
       {tech.map((technology, index) => {
         return (
           <span

@@ -6,7 +6,7 @@ function ProjectCard({ gradientColors, title, details, tech }) {
 
   return (
     <div
-      className="h-[500] w-[300px] mb-4 max-w-xs rounded overflow-hidden shadow-sm p-4 bg-white"
+      className="flex-1 h-[500] mb-4 rounded shadow-sm p-4 bg-white w-full"
       style={{
         boxShadow: `0px 2px 5px 0px ${color1}, 0px 3px 10px 0px ${color2}`,
       }}

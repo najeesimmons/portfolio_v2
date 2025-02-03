@@ -26,21 +26,16 @@ function Projects() {
 
   return (
     <>
-      <div id="projects" className="mx-auto mt-24 max-w-3xl">
-        <h3 className="tracking-widest font-semibold mt-8 mb-8">
-          MY PROJECTS_
-        </h3>
-        <div className="flex justify-around">
-          {projects.map((project, index) => (
-            <ProjectCard
-              key={index}
-              title={project.title}
-              details={project.details}
-              gradientColors={project.gradientColors}
-              tech={project.tech}
-            />
-          ))}
-        </div>
+      <div className="flex flex-col md:flex-row justify-around items-center md:items-stretch gap-8">
+        {projects.map((project, index) => (
+          <ProjectCard
+            key={index}
+            title={project.title}
+            details={project.details}
+            gradientColors={project.gradientColors}
+            tech={project.tech}
+          />
+        ))}
       </div>
     </>
   );
