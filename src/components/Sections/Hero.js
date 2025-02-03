@@ -4,7 +4,7 @@ import ResumeButton from "../Buttons/ResumeButtton";
 function Hero() {
   return (
     <>
-      <div className="mx-auto mt-32 max-w-3xl">
+      <div id="top" className="mx-auto mt-32 max-w-3xl">
         <div className="flex">
           <h1 className="mb-2 text-5xl font-semibold leading-tight text-primary mr-2">
             Najee

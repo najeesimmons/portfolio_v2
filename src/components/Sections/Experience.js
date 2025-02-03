@@ -3,7 +3,7 @@ import Tech from "../Tech/Tech";
 
 function Experience({ tech }) {
   return (
-    <div className="mx-auto mt-16 max-w-3xl">
+    <div id="experience" className="mx-auto mt-16 max-w-3xl">
       <h3 className="tracking-widest font-semibold mt-8 mb-8">EXPERIENCE_</h3>
       <div className="flex items-start">
         <div className="w-1/4">
