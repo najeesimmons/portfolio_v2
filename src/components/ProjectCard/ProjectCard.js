@@ -13,15 +13,15 @@ function ProjectCard({
 
   return (
     <div
-      className="flex-1 h-[550] mb-4 rounded shadow-sm p-4 bg-white w-full"
+      className="flex-1 mb-4 rounded shadow-sm p-4 bg-white w-full"
       style={{
         boxShadow: `0px 2px 5px 0px ${color1}, 0px 3px 10px 0px ${color2}`,
       }}
     >
-      <div className="h-[450] px-6 py-4">
+      <div className="px-6 py-4">
         <h2 className="font-bold text-xl mb-2">{title}</h2>
         <Tech tech={tech} />
-        <ul className="space-y-2 mt-4 mb-8">
+        <ul className="space-y-2 mt-4 mb-8 h-[70px]">
           {details.map((detail, index) => (
             <li
               key={index}
