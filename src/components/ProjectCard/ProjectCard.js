@@ -19,7 +19,7 @@ function ProjectCard({
       }}
     >
       <div className="px-6 py-4">
-        <h2 className="font-bold text-xl mb-2">{title}</h2>
+        <h2 className="font-bold text-xl mb-2 dark:text-black">{title}</h2>
         <Tech tech={tech} />
         <ul className="space-y-2 mt-4 mb-8 h-[70px]">
           {details.map((detail, index) => (
