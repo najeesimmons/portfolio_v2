@@ -14,22 +14,22 @@ export default function Home({ projects }) {
         <Hero />
       </Section>
       <Section
-        id={"projects"}
-        title={"PROJECTS_"}
-        className={"mt-24"}
-        bgcolor={"#7bbef5"}
-      >
-        <Projects projects={projects} />
-      </Section>
-      <Section
         id={"experience"}
         title={"EXPERIENCE_"}
         className={"mt-24"}
-        bgcolor={"#f6e05f"}
+        bgcolor={"#7bbef5"}
       >
         <Experience
           tech={["React", "Javascript", "HTML", "CSS", "Claris FileMakerPro"]}
         />
+      </Section>
+      <Section
+        id={"projects"}
+        title={"PROJECTS_"}
+        className={"mt-24"}
+        bgcolor={"#f6e05f"}
+      >
+        <Projects projects={projects} />
       </Section>
       <Section
         id={"contact"}
