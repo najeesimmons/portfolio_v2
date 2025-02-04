@@ -6,7 +6,7 @@ function Contact() {
     <div className="flex flex-col items-center mb-20 mt-8">
       <div className="mx-auto mb-8 w-32 h-32 overflow-hidden rounded-full">
         <img
-          src="/najeesimmons.png"
+          src="/najeesimmons.jpg"
           height={150}
           width={150}
           layout="intrinsic"
