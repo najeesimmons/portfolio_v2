@@ -8,9 +8,10 @@ function Contact() {
       <div className="mx-auto mb-8 w-32 h-32 overflow-hidden rounded-full">
         <Image
           src="/najeesimmons.png"
-          height={125}
+          height={150}
           width={150}
-          objectFit="cover"
+          layout="intrinsic"
+          alt="Najee Simmons"
         />
       </div>
       <CTAButton
