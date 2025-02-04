@@ -4,7 +4,7 @@ import CTAButton from "../Buttons/CTAButton";
 
 function Contact() {
   return (
-    <div className="flex flex-col items-center mb-16">
+    <div className="flex flex-col items-center mb-20 mt-8">
       <div className="mx-auto mb-8 w-32 h-32 overflow-hidden rounded-full">
         <Image
           src="/najeesimmons.png"

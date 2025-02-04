@@ -1,10 +1,15 @@
 import React from "react";
 
-function Section({ className, children, title, id }) {
+function Section({ className, children, title, id, bgcolor }) {
   return (
     <section id={id} className={`mx-auto max-w-3xl ${className}`}>
       {title && (
-        <h3 className="tracking-widest font-semibold mt-8 mb-8">{title}</h3>
+        <h3
+          className={`inline-block tracking-widest font-semibold mt-8 mb-8 px-4`}
+          style={{ backgroundColor: bgcolor }}
+        >
+          {title}
+        </h3>
       )}
       <div>{children}</div>
     </section>

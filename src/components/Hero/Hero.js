@@ -20,7 +20,7 @@ function Hero() {
         usablity.
       </p>
       <CTAButton
-        label="LOOK AT MY RESUME!"
+        label="RESUME"
         className="mt-8"
         href={
           "https://drive.google.com/file/d/10888rfeezoSZ6VzjLi2aGFvhWjYza6bj/view?usp=share_link"
