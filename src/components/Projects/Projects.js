@@ -4,23 +4,26 @@ import ProjectCard from "../ProjectCard/ProjectCard";
 function Projects() {
   const projects = [
     {
-      title: "API-Driven Tattoo and Artist Browser",
       details: [
         "Dynamically renders images and artist details",
         "Efficient state management enhancing app performance",
       ],
       gradientColors: ["#7bbef5", "#c9e6ab"],
-      // gradientColors: ["#f690af", "#f6e05f"],
+      liveURL: "https://beautiful-profiterole-7323ce.netlify.app",
+      repoURL: "https://github.com/najeesimmons/inkX_frontend",
       tech: ["React"],
+      title: "API-Driven Tattoo and Artist Browser",
     },
     {
-      title: "Custom Word Puzzle Engine (Client-Side)",
       details: [
         "Pure Javascript clone of the popular game Wordle",
         "Utilizes Extensive DOM manipulation",
       ],
       gradientColors: ["#f690af", "#f6e05f"],
+      liveURL: "https://najeesimmons.github.io/wordle/",
+      repoURL: "https://github.com/najeesimmons/wordle",
       tech: ["Javascript", "HTML", "CSS"],
+      title: "Custom Word Puzzle Engine (Client-Side)",
     },
   ];
 
@@ -30,10 +33,12 @@ function Projects() {
         {projects.map((project, index) => (
           <ProjectCard
             key={index}
-            title={project.title}
             details={project.details}
             gradientColors={project.gradientColors}
+            liveURL={project.liveURL}
+            repoURL={project.repoURL}
             tech={project.tech}
+            title={project.title}
           />
         ))}
       </div>

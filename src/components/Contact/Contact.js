@@ -1,23 +1,25 @@
 import React from "react";
 import Image from "next/image";
+import CTAButton from "../Buttons/CTAButton";
 
 function Contact() {
   return (
-    <div className="flex shadow-[0px_10px_15px_-3px_rgba(239,146,24,0.4),_0px_4px_6px_-2px_rgba(239,146,24,0.4)] mb-16">
-      <div>
+    <div className="flex flex-col items-center mb-16">
+      <div className="mx-auto mb-8 w-32 h-32 overflow-hidden rounded-full">
         <Image
-          src={"/DSC_0127.png"}
-          alt="Photo of Najee Simmons"
-          width={175}
-          height={175}
-          className="rounded-full"
+          src="/najeesimmons.png"
+          height={125}
+          width={150}
+          objectFit="cover"
         />
       </div>
-      <div>
-        <h4 className="text-2xl font-semibold leading-tight">Najee Simmons</h4>
-        <span className="txt-lg">najee.bryant.simmons@gmail.com</span>
-        <h1>icons</h1>
-      </div>
+      <CTAButton
+        label={"GET IN TOUCH"}
+        className={"mx-auto"}
+        href={
+          "mailto:najee.bryant.simmons@gmail.com?subject=Hello+World&body=Hello+World"
+        }
+      />
     </div>
   );
 }

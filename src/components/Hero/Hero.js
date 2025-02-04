@@ -1,5 +1,5 @@
 import React from "react";
-import ResumeButton from "../Buttons/ResumeButtton";
+import CTAButton from "../Buttons/CTAButton";
 
 function Hero() {
   return (
@@ -19,7 +19,14 @@ function Hero() {
         Building scalable, feature-rich web apps and optimizing frontend
         usablity.
       </p>
-      <ResumeButton className="mt-8" />
+      <CTAButton
+        label="LOOK AT MY RESUME!"
+        className="mt-8"
+        href={
+          "https://drive.google.com/file/d/10888rfeezoSZ6VzjLi2aGFvhWjYza6bj/view?usp=share_link"
+        }
+        isLinkOut={true}
+      />
     </>
   );
 }
