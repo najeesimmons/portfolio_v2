@@ -9,7 +9,7 @@ export default function Document() {
         name="description"
         content="Najee Simmons is a software engineer specializing in building scalable, feature-rich web applications. Explore his portfolio to see projects, skills, and experience."
       />
-      <meta property="og:title" content="Najee Simmons Resume" />
+      <meta property="og:title" content="Najee Simmons Portfolio" />
       <body className="antialiased">
         <Main />
         <NextScript />
