@@ -13,7 +13,7 @@ function ProjectCard({
 
   return (
     <div
-      className="flex-1 mb-4 rounded shadow-sm p-4 bg-white w-full dark:bg-black"
+      className="flex-1 mb-4 rounded shadow-sm p-4 bg-white w-full dark:bg-[#0a0a0a]"
       style={{
         boxShadow: `0px 2px 5px 0px ${color1}, 0px 3px 10px 0px ${color2}`,
       }}
