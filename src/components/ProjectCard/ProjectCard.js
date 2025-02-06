@@ -13,19 +13,19 @@ function ProjectCard({
 
   return (
     <div
-      className="flex-1 mb-4 rounded shadow-sm p-4 bg-white w-full dark:bg-gray-200"
+      className="flex-1 mb-4 rounded shadow-sm p-4 bg-white w-full dark:bg-black"
       style={{
         boxShadow: `0px 2px 5px 0px ${color1}, 0px 3px 10px 0px ${color2}`,
       }}
     >
       <div className="px-6 py-4">
-        <h3 className="font-bold text-xl mb-2 dark:text-black">{title}</h3>
+        <h3 className="font-bold text-xl mb-2">{title}</h3>
         <Tech tech={tech} />
         <ul className="space-y-2 mt-4 mb-8 h-[70px]">
           {details.map((detail, index) => (
             <li
               key={index}
-              className="relative pl-6 text-gray-700 text-sm"
+              className="text-sm relative pl-6 text-black dark:text-white"
               style={{ listStyle: "none" }}
             >
               <span
@@ -46,21 +46,17 @@ function ProjectCard({
             href={liveURL}
             rel="noopener noreferrer"
             target="_blank"
-            className="w-2/5"
+            className="flex items-center justify-center text-center w-2/5 bg-black dark:bg-white text-white dark:text-black text-xs font-semibold tracking-widest py-3 px-4 transition-transform duration-200 hover:bg-gray-800 dark:hover:bg-gray-200"
           >
-            <button className="w-full bg-black text-white text-xs font-semibold tracking-widest py-3 px-4 transition-transform duration-200 hover:bg-gray-800">
-              LIVE
-            </button>
+            LIVE
           </a>
           <a
             href={repoURL}
             rel="noopener noreferrer"
             target="_blank"
-            className="w-2/5"
+            className="flex items-center justify-center text-center w-2/5 bg-black dark:bg-white text-white dark:text-black text-xs font-semibold tracking-widest py-3 px-4 transition-transform duration-200 hover:bg-gray-800 dark:hover:bg-gray-200"
           >
-            <button className="w-full bg-black text-white text-xs font-semibold tracking-widest py-3 px-4 transition-transform duration-200 hover:bg-gray-800">
-              REPO
-            </button>
+            REPO
           </a>
         </div>
       </div>
