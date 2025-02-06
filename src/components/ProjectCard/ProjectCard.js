@@ -21,11 +21,11 @@ function ProjectCard({
       <div className="px-6 py-4">
         <h3 className="font-bold text-xl mb-2">{title}</h3>
         <Tech tech={tech} />
-        <ul className="space-y-2 mt-4 mb-8">
+        <ul className="space-y-2 mt-4 mb-8 h-[90px]">
           {details.map((detail, index) => (
             <li
               key={index}
-              className="text-base relative pl-6 text-black dark:text-white h-[35]"
+              className="text-base relative pl-6 text-black dark:text-white"
               style={{ listStyle: "none" }}
             >
               <span
