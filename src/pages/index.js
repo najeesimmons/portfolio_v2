@@ -1,10 +1,10 @@
-import Navigation from "@/components/Navigation/Navigation";
-import Experience from "@/components/Experience/Experience";
-import Hero from "@/components/Hero/Hero";
-import Projects from "@/components/Projects/Projects";
 import Contact from "@/components/Contact/Contact";
-import Section from "@/components/Section/Section";
+import Experience from "@/components/Experience/Experience";
 import Footer from "@/components/Footer/Footer";
+import Hero from "@/components/Hero/Hero";
+import Navigation from "@/components/Navigation/Navigation";
+import Projects from "@/components/Projects/Projects";
+import Section from "@/components/Section/Section";
 
 export default function Home({ projects }) {
   return (
