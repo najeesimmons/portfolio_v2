@@ -6,7 +6,7 @@ import Navigation from "@/components/Navigation/Navigation";
 import Projects from "@/components/Projects/Projects";
 import Section from "@/components/Section/Section";
 
-export default function Home({ projects }) {
+export default function Home({ projects, experiences }) {
   return (
     <>
       <Navigation />
@@ -19,9 +19,7 @@ export default function Home({ projects }) {
         className={"mt-24"}
         bgcolor={"#7bbef5"}
       >
-        <Experience
-          tech={["React", "Javascript", "HTML", "CSS", "Claris FileMakerPro"]}
-        />
+        <Experience experiences={experiences} />
       </Section>
       <Section
         id={"projects"}
@@ -82,7 +80,23 @@ export async function getStaticProps() {
     },
   ];
 
+  const experiences = [
+    {
+      details: [
+        "Develop and integrate dynamic Next.js components with complex state management to enhance web app functionality, improving user experience and data interactions.",
+        "Optimize backend infrastructure to support 2,500+ active users",
+        "Develop a custom CMS to automate the publishing of 6,000+ SEO-friendly web pages with integrated JSON-LD for enhanced search visibility.",
+      ],
+      gradientColors: ["#CFFFE5", "#E6D6FF"],
+      tech: ["React", "Javascript", "HTML", "CSS", "Claris FileMakerPro"],
+      title: "SOFTWARE ENGINEER, HEALTH STREET",
+    },
+  ];
+
   return {
-    props: { projects },
+    props: {
+      projects,
+      experiences,
+    },
   };
 }
