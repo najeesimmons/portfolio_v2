@@ -1,5 +1,3 @@
-import React from "react";
-
 function Tech({ tech }) {
   return (
     <div className="flex flex-wrap gap-4 justify-start">
@@ -7,7 +5,7 @@ function Tech({ tech }) {
         return (
           <span
             key={index}
-            className="px-2 py-0 text-xs font-semibold text-black bg-gray-200 rounded-full"
+            className="px-2 py-1 text-sm font-base text-black bg-gray-100"
           >
             {technology}
           </span>
