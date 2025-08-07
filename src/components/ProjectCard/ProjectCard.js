@@ -41,24 +41,26 @@ function ProjectCard({
             </li>
           ))}
         </ul>
-        <div className="w-11/12 mx-auto flex justify-between">
-          <a
-            href={liveURL}
-            rel="noopener noreferrer"
-            target="_blank"
-            className="flex items-center justify-center text-center w-2/5 bg-black dark:bg-white text-white dark:text-black text-sm font-semibold tracking-widest py-3 px-4 transition-transform duration-200 hover:bg-gray-800 dark:hover:bg-gray-200"
-          >
-            SITE
-          </a>
-          <a
-            href={repoURL}
-            rel="noopener noreferrer"
-            target="_blank"
-            className="flex items-center justify-center text-center w-2/5 bg-black dark:bg-white text-white dark:text-black text-sm font-semibold tracking-widest py-3 px-4 transition-transform duration-200 hover:bg-gray-800 dark:hover:bg-gray-200"
-          >
-            REPO
-          </a>
-        </div>
+        {liveURL && repoURL && (
+          <div className="w-11/12 mx-auto flex justify-between">
+            <a
+              href={liveURL}
+              rel="noopener noreferrer"
+              target="_blank"
+              className="flex items-center justify-center text-center w-2/5 bg-black dark:bg-white text-white dark:text-black text-sm font-semibold tracking-widest py-3 px-4 transition-transform duration-200 hover:bg-gray-800 dark:hover:bg-gray-200"
+            >
+              SITE
+            </a>
+            <a
+              href={repoURL}
+              rel="noopener noreferrer"
+              target="_blank"
+              className="flex items-center justify-center text-center w-2/5 bg-black dark:bg-white text-white dark:text-black text-sm font-semibold tracking-widest py-3 px-4 transition-transform duration-200 hover:bg-gray-800 dark:hover:bg-gray-200"
+            >
+              REPO
+            </a>
+          </div>
+        )}
       </div>
     </div>
   );
