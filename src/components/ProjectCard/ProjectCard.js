@@ -19,7 +19,7 @@ function ProjectCard({
       }}
     >
       <div className="px-6 py-4">
-        <h3 className="font-bold text-xl mb-2">{title}</h3>
+        <h3 className="font-bold text-xl mb-4">{title}</h3>
         <Tech tech={tech} />
         <ul className="space-y-2 mt-4 mb-8">
           {details.map((detail, index) => (
@@ -46,15 +46,15 @@ function ProjectCard({
             href={liveURL}
             rel="noopener noreferrer"
             target="_blank"
-            className="flex items-center justify-center text-center w-2/5 bg-black dark:bg-white text-white dark:text-black text-xs font-semibold tracking-widest py-3 px-4 transition-transform duration-200 hover:bg-gray-800 dark:hover:bg-gray-200"
+            className="flex items-center justify-center text-center w-2/5 bg-black dark:bg-white text-white dark:text-black text-sm font-semibold tracking-widest py-3 px-4 transition-transform duration-200 hover:bg-gray-800 dark:hover:bg-gray-200"
           >
-            LIVE
+            SITE
           </a>
           <a
             href={repoURL}
             rel="noopener noreferrer"
             target="_blank"
-            className="flex items-center justify-center text-center w-2/5 bg-black dark:bg-white text-white dark:text-black text-xs font-semibold tracking-widest py-3 px-4 transition-transform duration-200 hover:bg-gray-800 dark:hover:bg-gray-200"
+            className="flex items-center justify-center text-center w-2/5 bg-black dark:bg-white text-white dark:text-black text-sm font-semibold tracking-widest py-3 px-4 transition-transform duration-200 hover:bg-gray-800 dark:hover:bg-gray-200"
           >
             REPO
           </a>
