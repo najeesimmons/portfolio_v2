@@ -52,7 +52,7 @@ export async function getStaticProps() {
     {
       details: [
         "Responsive, Instagram-style web app using Next.js, Tailwind CSS, and Supabase",
-        "Stores user-specific favorites and comments in a PostgreSQL database",
+        "Commenting and favoriting are gated behind authentication to ensure user-specific data integrity",
       ],
       gradientColors: ["#f690af", "#f6e05f"],
       liveURL: "https://piqued.vercel.app/",
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       gradientColors: ["#7bbef5", "#c9e6ab"],
       liveURL: "https://beautiful-profiterole-7323ce.netlify.app",
       repoURL: "https://github.com/najeesimmons/inkX_frontend",
-      tech: ["React"],
+      tech: ["React", "Tailwind CSS"],
       title: "API-Driven Tattoo and Artist Browser",
     },
   ];
