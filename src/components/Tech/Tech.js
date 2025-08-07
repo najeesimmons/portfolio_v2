@@ -5,7 +5,7 @@ function Tech({ tech }) {
         return (
           <span
             key={index}
-            className="px-2 py-1 text-sm font-base text-black bg-gray-100"
+            className="px-1 py-1 text-sm font-base text-black bg-gray-100"
           >
             {technology}
           </span>
