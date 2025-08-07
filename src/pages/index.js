@@ -83,13 +83,14 @@ export async function getStaticProps() {
   const experiences = [
     {
       details: [
-        "Develop and integrate dynamic Next.js components with complex state management to enhance web app functionality, improving user experience and data interactions.",
+        "Develop and integrate dynamic Next.js components with complex state management to enhance web app functionality",
         "Optimize backend infrastructure to support 2,500+ active users",
-        "Develop a custom CMS to automate the publishing of 6,000+ SEO-friendly web pages with integrated JSON-LD for enhanced search visibility.",
+        "Develop a custom CMS to automate publishing of 6,000+ SEO-friendly web pages with integrated JSON-LD",
       ],
       gradientColors: ["#CFFFE5", "#E6D6FF"],
+      subtitle: "January 2023 - Present",
       tech: ["React", "Javascript", "HTML", "CSS", "Claris FileMakerPro"],
-      title: "SOFTWARE ENGINEER, HEALTH STREET",
+      title: "Software Engineer, Health Street",
     },
   ];
 
