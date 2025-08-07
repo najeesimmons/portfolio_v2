@@ -57,7 +57,6 @@ export async function getStaticProps() {
       repoURL: "https://github.com/najeesimmons/piqued-fe",
       tech: [
         "Next.js",
-        "React",
         "Tailwind CSS",
         "Supabase",
         "PostgreSQL",
