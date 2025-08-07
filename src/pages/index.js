@@ -51,6 +51,26 @@ export async function getStaticProps() {
   const projects = [
     {
       details: [
+        "Responsive, Instagram-style web app using Next.js, Tailwind CSS, and Supabase",
+        "Stores user-specific favorites and comments in a PostgreSQL database",
+      ],
+      gradientColors: ["#f690af", "#f6e05f"],
+      liveURL: "https://piqued.vercel.app/",
+      repoURL: "https://github.com/najeesimmons/piqued-fe",
+      tech: [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Supabase",
+        "PostgreSQL",
+        "Supabase Auth",
+        "Vercel",
+        "Pexels API",
+      ],
+      title: "Full-Stack Photo Gallery with Real User Data",
+    },
+    {
+      details: [
         "Dynamically renders images and artist details",
         "Efficient state management enhancing app performance",
       ],
@@ -59,17 +79,6 @@ export async function getStaticProps() {
       repoURL: "https://github.com/najeesimmons/inkX_frontend",
       tech: ["React"],
       title: "API-Driven Tattoo and Artist Browser",
-    },
-    {
-      details: [
-        "Pure Javascript clone of the popular game Wordle",
-        "Utilizes Extensive DOM manipulation",
-      ],
-      gradientColors: ["#f690af", "#f6e05f"],
-      liveURL: "https://najeesimmons.github.io/wordle/",
-      repoURL: "https://github.com/najeesimmons/wordle",
-      tech: ["Javascript", "HTML", "CSS"],
-      title: "Custom Word Puzzle Engine (Client-Side)",
     },
   ];
 
