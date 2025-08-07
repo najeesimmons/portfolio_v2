@@ -88,7 +88,7 @@ export async function getStaticProps() {
       ],
       gradientColors: ["#CFFFE5", "#E6D6FF"],
       subtitle: "January 2023 - Present",
-      tech: ["React", "Javascript", "HTML", "CSS", "Claris FileMakerPro"],
+      tech: ["React", "Javascript", "HTML", "CSS", "Claris FileMaker Pro"],
       title: "Software Engineer, Health Street",
     },
   ];

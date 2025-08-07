@@ -24,7 +24,7 @@ function ProjectCard({
           {title}
         </h3>
         {subtitle && <h2 className="mb-4">{subtitle}</h2>}
-        <Tech tech={tech} />
+
         <ul className="space-y-2 mt-4 mb-8">
           {details.map((detail, index) => (
             <li
@@ -45,8 +45,9 @@ function ProjectCard({
             </li>
           ))}
         </ul>
+
         {liveURL && repoURL && (
-          <div className="w-11/12 mx-auto flex justify-between">
+          <div className="w-11/12 mx-auto flex justify-between mb-8">
             <a
               href={liveURL}
               rel="noopener noreferrer"
@@ -65,6 +66,8 @@ function ProjectCard({
             </a>
           </div>
         )}
+
+        <Tech tech={tech} />
       </div>
     </div>
   );
